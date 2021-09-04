@@ -1,0 +1,85 @@
+[
+    {
+        "condition": "partially obstructed choking",
+        "symptoms": [
+            "coughing",
+            "can speak",
+            "wheezing",
+            "flushed skin colour"
+        ],
+        "treatment": [
+            "Apprach, identify yourself. Follow the victim if they leave the room.",
+            "Ask: 'Are you choking? My name is... and I'm trained in first aid, may I assist you?'",
+            "As long as victim is coughing, do not interfere physically.",
+            "Encourage victim to continue coughing."
+        ]
+    },
+    {
+        "condition": "fully obstructed choking",
+        "symptoms": [
+            "unable to cough",
+            "unable to speak",
+            "unable to breathe",
+            "may be holding throat",
+            "grey/blue lips & gums"
+        ],
+        "treatment": [
+            "Perform 5 back blows",
+            "Adult: Perform 5 abdominal thrusts, up and in to the abdomen",
+            "Infant: Perform 5 chest compressions (2 fingers)",
+            "If the victim is pregnant or too large: perform chest compressions",
+            "Repeat until successful or victim becomes unconscious"
+        ]
+    },
+    {
+        "condition": "Asthma Attack",
+        "symptoms": [
+            "difficulty breathing",
+            "anxiety",
+            "wheezing"
+        ],
+        "treatment": [
+            "Assist victim to a comfortable position",
+            "Assist victim in taking their medication (e.g. inhaler)",
+            "Loosen tight-fitting clothin around the neck or chest",
+            "Call EMS if attack continues or victim is distressed."
+        ]
+    },
+    {
+        "condition": "Hyperventilation",
+        "symptoms": [
+            "high rate of respiration",
+            "lightheadedness",
+            "weakness",
+            "headache",
+            "tingling of hands, feet, and the area around the mouth",
+            "confusion",
+            "unconsiousness"
+        ],
+        "treatment": [
+            "Reassure and try to calm victim",
+            "Encourage victim to perform pursue-lip breathing (say: 'breath like you're breathing through a straw')"
+        ]
+    },
+    {
+        "condition": "Angina and heart attack",
+        "symptoms": [
+            "shortness of breath",
+            "sweating",
+            "tightness in chest",
+            "confusion",
+            "pain in chest, back, arms, or jaw",
+            "nausea, vomiting",
+            "dizziness",
+            "denial of symptoms"
+        ],
+        "treatment": [
+            "call EMS",
+            "Assist victim into comfortable position",
+            "loosen tight clothing around neck and chest",
+            "help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
+            "if victim does not have prescribed medication, another option is ASA. You may administer ASA to a victim if: They are not allergic, haven't been told by a doctor to avoid ASA, and consent to taking ASA.",
+            "Recommend the victim chew 1 adult or 2 low dose ASA tablets."
+        ]
+    }
+]

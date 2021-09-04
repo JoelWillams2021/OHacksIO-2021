@@ -1,0 +1,40 @@
+{
+    "name": "ohacksio-2021",
+    "version": "1.0.0",
+    "description": "A repo for our OHacksIO hackathon project",
+    "main": "main.js",
+    "scripts": {
+        "start": "nodemon main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jasonli0616/OHacksIO-2021.git"
+    },
+    "contributors": [
+        {
+            "name": "Jason Li",
+            "url": "https://jasonli0616.dev"
+        },
+        {
+            "name": "Evan Dennsion",
+            "url": "http://www.evandennison.com"
+        },
+        {
+            "name": "Amogh Turaga",
+            "url": "https://joelwillams2021.github.io/Bootstrap_CV_Website/"
+        },
+        {
+            "name": "Raghav Paratkar"
+        }
+    ],
+    "bugs": {
+        "url": "https://github.com/jasonli0616/OHacksIO-2021/issues"
+    },
+    "homepage": "https://github.com/jasonli0616/OHacksIO-2021#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "mongoose": "^6.0.4",
+        "nodemon": "^2.0.12"
+    }
+}
