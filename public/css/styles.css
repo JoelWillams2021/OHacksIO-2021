@@ -1,18 +1,25 @@
-.form-control{
-    margin-top: 5vh;
-    margin-left: 8vw;
-    width: 75%;
-    padding: 2.5vh;
-    font-size: 2.5vh ;
-    border-radius: 50px;
-    /* background-color: rgb(255, 0, 0);
-    color: white; */
+.element {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ce8888;
+    
 }
 
+#selected {
+    border: 1px solid black;
+}
 
-.btn{
-    margin-top: 5vh;
-    padding: 2.5vh;
-    font-size: 2.5vh ;
-    border-radius: 50px;
+.card {
+    margin: 30px auto;
+    max-width: 700px;
+}
+.card img {
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.bg-warning {
+background-color: rgb(241, 132, 132);
 }

@@ -1,9 +1,8 @@
-[
-    {
-        "condition": "partially obstructed choking",
+{
+    "partially_obstructed_choking": {
+        "condition": "Partially obstructed choking",
         "symptoms": [
-            "coughing",
-            "can speak",
+            "Coughing",
             "wheezing",
             "flushed skin colour"
         ],
@@ -14,14 +13,14 @@
             "Encourage victim to continue coughing."
         ]
     },
-    {
-        "condition": "fully obstructed choking",
+    "fully_obstructed_choking": {
+        "condition": "Fully obstructed choking",
         "symptoms": [
-            "unable to cough",
-            "unable to speak",
-            "unable to breathe",
-            "may be holding throat",
-            "grey/blue lips & gums"
+            "Unable to cough",
+            "Unable to speak",
+            "Unable to breathe",
+            "May be holding throat",
+            "Grey/blue lips & gums"
         ],
         "treatment": [
             "Perform 5 back blows",
@@ -31,12 +30,12 @@
             "Repeat until successful or victim becomes unconscious"
         ]
     },
-    {
+    "asthma_attack": {
         "condition": "Asthma Attack",
         "symptoms": [
-            "difficulty breathing",
-            "anxiety",
-            "wheezing"
+            "Difficulty breathing",
+            "Anxiety",
+            "Wheezing"
         ],
         "treatment": [
             "Assist victim to a comfortable position",
@@ -45,41 +44,360 @@
             "Call EMS if attack continues or victim is distressed."
         ]
     },
-    {
+    "hyperventilation": {
         "condition": "Hyperventilation",
         "symptoms": [
-            "high rate of respiration",
-            "lightheadedness",
-            "weakness",
-            "headache",
-            "tingling of hands, feet, and the area around the mouth",
-            "confusion",
-            "unconsiousness"
+            "High rate of respiration",
+            "Lightheadedness",
+            "Weakness",
+            "Headache",
+            "Tingling of hands, feet, and the area around the mouth",
+            "Confusion",
+            "Unconsiousness"
         ],
         "treatment": [
             "Reassure and try to calm victim",
             "Encourage victim to perform pursue-lip breathing (say: 'breath like you're breathing through a straw')"
         ]
     },
-    {
-        "condition": "Angina and heart attack",
+    "angina_heart_attack": {
+        "condition": "Angina & Heart Attack",
         "symptoms": [
-            "shortness of breath",
-            "sweating",
-            "tightness in chest",
-            "confusion",
-            "pain in chest, back, arms, or jaw",
-            "nausea, vomiting",
-            "dizziness",
-            "denial of symptoms"
+            "Shortness of breath",
+            "Sweating",
+            "Tightness in chest",
+            "Confusion",
+            "Chest pain",
+            "Back pain",
+            "Arm pain",
+            "Jaw pain",
+            "Nausea",
+            "Vomiting",
+            "Dizziness",
+            "Denial of symptoms"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Assist victim into comfortable position",
+            "Loosen tight clothing around neck and chest",
+            "Help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
+            "If victim does not have prescribed medication, another option is ASA. You may administer ASA to a victim if: They are not allergic, haven't been told by a doctor to avoid ASA, and consent to taking ASA.",
+            "Recommend the victim chew 1 adult or 2 low dose ASA tablets."
+        ]
+    },
+    "stroke": {
+        "condition": "Stroke",
+        "symptoms": [
+            "Numbness in face, arms, or legs",
+            "Facial droop",
+            "Slurred speech",
+            "Blurred vision",
+            "Headache",
+            "Dizziness"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Assess breathing, check pulse and other signs of circulation",
+            "Assist the victim into a comfortable position"
+        ]
+    },
+    "shock": {
+        "condition": "Shock",
+        "symptoms": [
+            "Rapid breathing",
+            "Weak pulse",
+            "Pale skin",
+            "Restlessness",
+            "Weakness",
+            "Fear",
+            "Confusion",
+            "Nausea",
+            "Vomiting",
+            "Unconsciousness"
+        ],
+        "treatment": [
+            "Maintain body temperature (if victim is cold, cover victim)",
+            "Ensure breathing and pulse is at the normal rate",
+            "Reassure the victim",
+            "Assist victim into comfortable position"
+        ]
+    },
+    "major_bleeding": {
+        "condition": "Major Bleeding",
+        "symptoms": [
+            "Blood",
+            "Pain",
+            "Distress",
+            "Shock"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Rest the affected body part",
+            "Apply a sterile dressing to the wound and wrap the dressing with a bandage",
+            "If the dressing/bandage fails to control the bleeding, consider using a tourniquet (if trained to use one)"
+        ]
+    },
+    "severe_allergies": {
+        "condition": "Severe Allergies (Anaphylaxis)",
+        "symptoms": [
+            "Difficulty breathing",
+            "Wheezing",
+            "Tight sensation in airway",
+            "Swelling of face, lips, neck or area in contact with allergen",
+            "Nausea",
+            "Vomiting",
+            "Weakness",
+            "Dizziness",
+            "Confusion"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Ask victim if they carry an antidot kit for the allergy (e.g. EpiPen)",
+            "Assist victim with their medicine",
+            "A second dose of medication may be given if symptoms do not improve within 5 minutes",
+            "Provide EMS with the medication once they arive"
+        ]
+    },
+    "diabetes": {
+        "condition": "Diabetic Emergency (low blood sugar)",
+        "symptoms": [
+            "Confusion",
+            "Sweating",
+            "Headache",
+            "Nausea",
+            "Can appear intoxicated",
+            "Rapid breathing",
+            "Disorientation",
+            "Trembling"
+        ],
+        "treatment": [
+            "Call EMS",
+            "If unconscious, place victim on their side",
+            "If conscious, help victim test their blood suger (if test kit available)",
+            "Provide victim with prescribed medication or sugar including glucose tablets, candy, or juice",
+            "Never administer insulin"
+        ]
+    },
+    "seizures": {
+        "condition": "Seizures",
+        "symptoms": [
+            "LOC: Loss of consciousness",
+            "Arching of the back and rigidity in the body",
+            "Noisy breathing, extra saliva",
+            "Contraction and relaxtion of the muscles of the arms and legs",
+            "Teeth clenching or grinding",
+            "Loss of control of the bowel or bladder",
+            "Confusion, disorientation, fatigue"
+            
+        ],
+        "treatment": [
+            "Call EMS",
+            "Clear objects from the surrounding area to prevent the victim from striking them and getting injured",
+            "Do NOT restrict the victim's movements",
+            "Do NOT place anything between the victim's teeth",
+            "Try to record number and duration of seizures"
+        ]
+    },
+    "unconsciousness": {
+        "condition": "Unconsciousness",
+        "symptoms": [
+            "unresponsive to voice",
+            "unresponsive to pain (pinching)",
+            "unaware of surroundings"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Identify and control cause of unconsciousness",
+            "Check breathing",
+            "If victim is not breathing, perform CPR",
+            "If victim is breathing, treat for shock"
+        ]
+    },
+    "fevers_in_infants_children": {
+        "condition": "Fevers",
+        "symptoms": [
+            "38 C (100.5 F) or higher for an infant",
+            "40 C (104 F) or higher for a child"
+            
+        ],
+        "treatment": [
+            "Seek medical assistance or phone EMS",
+            "Advise giving acetaminophen (e.g Tylenol) to help reduce the child's temperature",
+            "Do not give ASA (e.g. Aspirin) -- it may cause a life-threatening condition called Reye's syndrome",
+            "Encourage the child to drink fluids",
+            "Sponge the child with lukewarm water (never cold water) for about 20 minutes - do not immerse the child or infant in a tub",
+            "Dry and dress the child in comfortable but not too warm clothes",
+            "Monitor the temperature, encourage fluids, and repeat sponging if necessary if necessary until medical help is reached or arrives",
+            "If child has a convulsion treat for seizure"
+        ]
+    },
+    "fainting": {
+        "condition": "Fainting",
+        "symptoms": [
+            "Restlessness",
+            "Weakness",
+            "Fear",
+            "Anxiety",
+            "Pale skin",
+            "Rapid breathing",
+            "Dizziness",
+            "Unconscious"
         ],
         "treatment": [
             "call EMS",
-            "Assist victim into comfortable position",
-            "loosen tight clothing around neck and chest",
-            "help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
-            "if victim does not have prescribed medication, another option is ASA. You may administer ASA to a victim if: They are not allergic, haven't been told by a doctor to avoid ASA, and consent to taking ASA.",
-            "Recommend the victim chew 1 adult or 2 low dose ASA tablets."
+            "Identify and control cause of fainting",
+            "Treat for shock"
+        ]
+    },
+    "wound": {
+        "condition": "Wound",
+        "symptoms": [
+            "Scrape",
+            "Cut",
+            "Tear",
+            "Stab",
+            "Bite",
+            "Pain",
+            "Distress",
+            "External bleeding"
+        ],
+        "treatment": [
+            "Rest the affected body part",
+            "if not bleeding, gently clean affected area by flushing with clean water",
+            "if bleeding, control blood by applying a sterile dressing and wrap in a bandage",
+            "Call EMS if there is a lot of blood loss, you cannot control the bleeding, the wound is an animal or human bite, or an infection develops"
+        ]
+    },
+    "embedded_objects": {
+        "condition": "Embedded Objects",
+        "symptoms": [
+            "Bleeding",
+            "Pain",
+            "Swelling",
+            "Redness",
+            "Shock"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Leave object in place",
+            "Control bleeding by applying pressure around object",
+            "Bandage the wound",
+            "Treat for shock"
+        ]
+    },
+    "amputation": {
+        "condition": "Amputation",
+        "symptoms": [
+            "Jagged edges of soft tissues and bones",
+            "Exposed and obviously missing body parts",
+            "Complete amputation - ends of blood vessels tend to collapse resulting in suprisingly small amount of bleeding relative to the severity of the injury"
+        ],
+        "treatment": [
+            "Phone EMS",
+            "Apply direct pressure to control bleeding. If direct pressure fails, use a tourniquet",
+            "Partial amputation - treat as a severe wound: reposition part to its normal position, control bleeding, cover area with moist sterlie gauze, and immobilize injured part",
+            "Complete amputation - If possible, recover any amputated parts, wrap severed parts in moist sterile gauze and place in a sealed waterproof container, place container with severed part in another container with crushed ice or ice water, transport the part with the victim and record tim and date of the amputation"
+        ]
+    },
+    "internal_bleeding": {
+        "condition": "Internal Bleeding",
+        "symptoms": [
+            "Shortness of breath",
+            "Sweating",
+            "Swelling",
+            "Shock",
+            "Anxiety"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Treat for shock"
+        ]
+    },
+    "head_injury": {
+        "condition": "Head Injury",
+        "symptoms": [
+            "Confusion",
+            "Decreased level of consciousness",
+            "Head pain",
+            "Bleeding",
+            "Swelling",
+            "Bruising",
+            "Shock",
+            "Blurred vision",
+            "Blood or clear fluid from the eyes, ears, nose or mouth"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Immobilize spine if you suspect a neck of spinal injury",
+            "Treat the area for bleeding by applying a sterile dressing and a head bandage",
+            "For a suspected concussion, stop the sport or recreational activity"
+        ]
+    },
+    "sprains_and_strains": {
+        "condition": "Sprains and Strains",
+        "symptoms": [
+            "Swelling",
+            "Pain",
+            "Difficulty movint the affected area",
+            "Discolouration (bruising)"
+        ],
+        "treatment": [
+            "Rest the injured part",
+            "Immobilize it in a comfrotable position",
+            "Ice the injured part for 10-15 minutes every hour until the swelling subsides",
+            "Elevate the immobilized limb only if it does not increase pain or discomfort",
+            "Advise victim to see a doctor for medical follow-up"
+        ]
+    },
+    "open_fracture": {
+        "condition": "Open Fracture",
+        "symptoms": [
+            "Pain",
+            "Swelling",
+            "Discolouration",
+            "Difficulty moving the affected part",
+            "Bone protruding through the skin",
+            "Bleeding wound"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Rest the affected part",
+            "Immobilize it as you found it",
+            "Place a clean bandage over the exposed bone and wound"
+        ]
+    },
+    "dislocation": {
+        "condition": "Dislocation",
+        "symptoms": [
+            "Pain",
+            "Swelling",
+            "Discolouration",
+            "Difficulty moving the affected part",
+            "Joint may look deformed or out of its original position"
+        ],
+        "treatment": [
+            "Call EMS",
+            "Rest the injured part",
+            "Immobilize it in a comfortable position - DO NOT move it",
+            "Ice the injured part for 10-15 minutes every hour",
+            "Support the injured part in a comfortable position. Do not attempt to put the bones back, this can cause more damage"
+        ]
+    },
+    "closed_fracture": {
+        "condition": "Closed Fracture",
+        "symptoms": [
+            "Pain",
+            "Swelling",
+            "Discolouration",
+            "Difficulty moving the affected part",
+            "Deformity",
+            "Victim may have heard a cracking sound when incident happenedappened"
+        ],
+        "treatment": [
+            "Rest injured part",
+            "Immobilize it in a comfortable position - DO NOT move it",
+            "Ice the injured part for 10-15 minutes every hour until the swelling subisides",
+            "Elevate an immobilized limb only if"
         ]
     }
-]
+}

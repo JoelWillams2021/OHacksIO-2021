@@ -7,52 +7,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/images/Logo.png" type="image/x-icon">
     <title>Life Saver</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="https://lh3.googleusercontent.com/proxy/2jMCGOSrNx8taNbvBVoVRBqFEmPtiICha-kYqVrUg4zYCJRUkTQAxHmJeDrntoBPiU8afisYxKJtBLObB95Fmdha-WJHzo1KJLkaVBPF5BjA" alt="image" width="24" height="24" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="views/diagnose.ejs"><h1 class ="fs-3" >Diagnose</h1></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="views/treat.ejs"><h1 class = "fs-3">Treatment</h1></a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/images/Logo.png" alt="image" width="24" height="24" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/emergency">
+                            <h1 class="fs-3">Emergency</h1>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/treatment">
+                            <h1 class="fs-3">Diagnose</h1>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <br>
+        <h1 class="text-center"><%= pagetype %></h1>
+    
+        <center><img src="/images/doctors.svg" alt="image" height="400vh" width="400vh"></center>
+        <form class="d-flex py-5" id="form">
+            <% if (pagetype === 'Emergency' ) { %>
+                <input class="form-control me-2" type="text" placeholder="Enter your emergency here" aria-label="Search" id="emergency-input">
+            <% } else if (pagetype === 'Treatment' ) { %>
+                <input class="form-control me-2" type="text" placeholder="Enter your symptoms here" aria-label="Search">
+            <% } %>
+            <!-- <div class ="text-center"> -->
+            <a class="btn btn-danger btn-lg">Search</a>
+            <!-- </div> -->
+        </form>
+
+        <ul id="selected"></ul>
+        <div id="autocomplete">
+        </div>
+
+        <div style="background-color:rgb(250, 131, 19);" class="card text-light">
+            <div class="card-body">
+                <center><h5 class="card-title">Things to Consider:</h5></center>
+                <ul class="card-text">
+                    <li>Signs and symptoms</li>
+                    <li>Allergies</li>
+                    <li>Medication</li>
+                    <li>Past medical history</li>
+                    <li>Last meal</li>
+                    <li>Events prior</li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
-</nav>
 
-                  
-<form class="d-flex">
-  <input class="form-control me-2" type="search" placeholder="Type Your Emergency Here" aria-label="Search">
-  <!-- <div class ="text-center"> -->
-    <button class="btn btn-danger btn-lg" type="submit">Search </button>
-  <!-- </div> -->
-</form>
-
-<!-- <div class ="text-center">
-  <button class="btn btn-outline-danger btn-lg" type="submit">Search </button>
-</div> -->
-
-
-
-    <!-- p. 27 - 80 -->
-
-
-
+    <script>
+        var conditions = JSON.parse(`<%- JSON.stringify(conditions) %>`)
+    </script>
+    <% if (pagetype === 'Emergency' ) { %>
+        <script>const pagetype = 'Emergency';</script>
+        <script src="/js/autocomplete.js"></script>
+    <% } else if (pagetype === 'Treatment') { %>
+        <script>
+            const pagetype = 'Treatment';
+        </script>
+    <% } %>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
