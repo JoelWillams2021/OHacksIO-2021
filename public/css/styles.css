@@ -6,8 +6,6 @@
     
 }
 
-
-
 .card {
     margin: 30px auto;
     max-width: 700px;
@@ -15,7 +13,7 @@
 }
 
 .card:hover {
-    box-shadow: 0 0 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
@@ -32,4 +30,8 @@
     color: #ffffff;
     background-color: #ff0000; 
     border-radius: 8px;
+}
+
+.btn-primary {
+    text-align: center;
 }

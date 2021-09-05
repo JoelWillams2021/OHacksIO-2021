@@ -14,22 +14,22 @@ var conditions = require('./data/symptoms.json');
 // BANDAGE URL: https://www.youtube.com/watch?v=Y1G8XQb0WBc
 
 app.get("/", (req, res) => {
-    res.render('index', {
+    return res.render('index', {
         pagetype: 'Diagnose',
         conditions: conditions
     });
 });
 
 app.get("/cpr", (req, res) => {
-    res.render('cpr');
+    return res.render('cpr');
 });
 
 app.get("/diagnose", (req, res) => {
-    res.redirect('/')
+    return res.redirect('/')
 });
 
 app.get("/treatment", (req, res) => {
-    res.render('index', {
+    return res.render('index', {
         pagetype: 'Treatment',
         conditions: conditions
     });
@@ -43,9 +43,9 @@ app.get("/treatment/:condition", (req, res) => {
     ]
 
     if (premade_pages.includes(req.params['condition']))
-        res.render(`treatment/${req.params['condition']}`)
+        return res.render(`treatment/${req.params['condition']}`)
     else
-        res.render('treatment/treatment', {
+        return res.render('treatment/treatment', {
             condition: conditions[req.params['condition']]['condition'],
             symptoms: conditions[req.params['condition']]['symptoms'],
             treatment: conditions[req.params['condition']]['treatment']
@@ -53,6 +53,7 @@ app.get("/treatment/:condition", (req, res) => {
 })
 
 app.get("/search", (req, res) => {
+
     let matchedConditions = {};
     for (condition in conditions) {
 
@@ -64,7 +65,7 @@ app.get("/search", (req, res) => {
         }
 
     }
-    res.render('search', {
+    return res.render('search', {
         matchedConditions: matchedConditions,
         conditions: conditions
     })

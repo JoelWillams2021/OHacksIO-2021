@@ -49,7 +49,7 @@
 
             <% for (condition in matchedConditions) { %>
 
-                <div style="background-color:rgb(255, 123, 0);" class="card text-light">
+                <div class="card text-light bg-secondary">
                     <div class="card-body">
                         <h5 class="card-title"><%= conditions[condition]['condition'] %></h5>
                         Symptoms:
@@ -59,7 +59,7 @@
                             <% } %>
                         <ul/>
                         <br>
-                        <a href="/treatment/<%= condition %>" class="btn btn-primary">See Treatment</a>
+                        <a href="/treatment/<%= condition %>" class="btn btn-primary text-center">See Treatment</a>
                     </div>
                 </div>
 

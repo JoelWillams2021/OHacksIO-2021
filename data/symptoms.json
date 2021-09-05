@@ -27,7 +27,8 @@
             "Adult: Perform 5 abdominal thrusts, up and in to the abdomen",
             "Infant: Perform 5 chest compressions (2 fingers)",
             "If the victim is pregnant or too large: perform chest compressions",
-            "Repeat until successful or victim becomes unconscious"
+            "Repeat until successful or victim becomes unconscious",
+            "If victim becomes unconscious, start CPR"
         ]
     },
     "asthma_attack": {
@@ -81,8 +82,8 @@
             "Assist victim into comfortable position",
             "Loosen tight clothing around neck and chest",
             "Help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
-            "If victim does not have prescribed medication, another option is ASA. You may administer ASA to a victim if: They are not allergic, haven't been told by a doctor to avoid ASA, and consent to taking ASA.",
-            "Recommend the victim chew 1 adult or 2 low dose ASA tablets."
+            "If victim does not have prescribed medication, another option is Aspirin. You may administer Aspirin to a victim if: They are not allergic, haven't been told by a doctor to avoid Aspirin, and consent to taking Aspirin.",
+            "Recommend the victim chew 1 adult or 2 low dose Aspirin tablets."
         ]
     },
     "stroke": {
@@ -223,7 +224,7 @@
         "treatment": [
             "Seek medical assistance or phone EMS",
             "Advise giving acetaminophen (e.g Tylenol) to help reduce the child's temperature",
-            "Do not give ASA (e.g. Aspirin) -- it may cause a life-threatening condition called Reye's syndrome",
+            "Do not give Aspirin (e.g. Aspirin) -- it may cause a life-threatening condition called Reye's syndrome",
             "Encourage the child to drink fluids",
             "Sponge the child with lukewarm water (never cold water) for about 20 minutes - do not immerse the child or infant in a tub",
             "Dry and dress the child in comfortable but not too warm clothes",

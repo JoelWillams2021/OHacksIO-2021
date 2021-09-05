@@ -32,7 +32,24 @@ if (pagetype === 'Diagnose') {
             allMatchedSymptoms = [];
         }
     })
+} else {
+    const treatment_input = document.getElementById('treatment-input');
+    treatment_input.addEventListener('keyup', () => {
+        autocomplete.innerHTML = '';
+        let allMatchedConditions = [];
+
+        for (condition in conditions) {
+            allMatchedConditions.push(conditions[condition]["condition"]);
+        }
+
+        // Get matched
+        for (let i = 0; i < allMatchedConditions.length; i++) {
+            if (allMatchedConditions[i].toLowerCase().includes(treatment_input.value.toLowerCase()))
+                autocomplete.innerHTML += `<div>${allMatchedConditions[i]}</div><br>`;
+        }
+    })
 }
+
 
 function onSymptomSelect(symptom) {
     if (document.getElementById(`autocomplete-${symptom}`).checked) {
