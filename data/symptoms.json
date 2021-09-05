@@ -11,7 +11,8 @@
             "Ask: 'Are you choking? My name is... and I'm trained in first aid, may I assist you?'",
             "As long as victim is coughing, do not interfere physically.",
             "Encourage victim to continue coughing.",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If coughing/wheezing stops, see fully obstructed choking"
         ]
     },
     "fully_obstructed_choking": {
@@ -24,12 +25,13 @@
             "Grey/blue lips & gums"
         ],
         "treatment": [
+            "If coughing/wheezing, see partially obstructed choking",
             "Perform 5 back blows",
             "Adult: Perform 5 abdominal thrusts, up and in to the abdomen",
             "Infant: Perform 5 chest compressions (2 fingers)",
             "If the victim is pregnant or too large: perform chest compressions",
             "Repeat until successful or victim becomes unconscious",
-            "If victim becomes unconscious, start CPR",
+            "If victim becomes unconscious and not breathing, CPR takes priority over choking",
             "Monitor vitals"
         ]
     },
@@ -62,7 +64,8 @@
         "treatment": [
             "Reassure and try to calm victim",
             "Encourage victim to perform pursue-lip breathing (say: 'breath like you're breathing through a straw')",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "angina_heart_attack": {
@@ -88,7 +91,8 @@
             "Help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
             "If victim does not have prescribed medication, another option is Aspirin. You may administer Aspirin to a victim if: They are not allergic, haven't been told by a doctor to avoid Aspirin, and consent to taking Aspirin.",
             "Recommend the victim chew 1 adult or 2 low dose Aspirin tablets.",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "stroke": {
@@ -105,7 +109,8 @@
             "Call EMS",
             "Assess breathing, check pulse and other signs of circulation",
             "Assist the victim into a comfortable position",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "shock": {
@@ -127,7 +132,8 @@
             "Ensure breathing and pulse is at the normal rate",
             "Reassure the victim",
             "Assist victim into comfortable position",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "major_bleeding": {
@@ -143,7 +149,8 @@
             "Rest the affected body part",
             "Apply a sterile dressing to the wound and wrap the dressing with a bandage",
             "If the dressing/bandage fails to control the bleeding, consider using a tourniquet (if trained to use one)",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "severe_allergies": {
@@ -165,7 +172,8 @@
             "Assist victim with their medicine",
             "A second dose of medication may be given if symptoms do not improve within 5 minutes",
             "Provide EMS with the medication once they arive",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "diabetes": {
@@ -186,7 +194,8 @@
             "If conscious, help victim test their blood suger (if test kit available)",
             "Provide victim with prescribed medication or sugar including glucose tablets, candy, or juice",
             "Never administer insulin",
-            "Monitor vitals"
+            "Monitor vitals",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "seizures": {
@@ -198,7 +207,9 @@
             "Contraction and relaxtion of the muscles of the arms and legs",
             "Teeth clenching or grinding",
             "Loss of control of the bowel or bladder",
-            "Confusion, disorientation, fatigue"
+            "Confusion",
+            "Disorientation",
+            "Fatigue"
         ],
         "treatment": [
             "Call EMS",
@@ -212,9 +223,10 @@
     "unconsciousness": {
         "condition": "Unconsciousness",
         "symptoms": [
-            "unresponsive to voice",
-            "unresponsive to pain (pinching)",
-            "unaware of surroundings"
+            "Unconsciousness",
+            "Unresponsive to voice",
+            "Unresponsive to pain (pinching)",
+            "Unaware of surroundings"
         ],
         "treatment": [
             "Call EMS",
@@ -229,7 +241,6 @@
         "symptoms": [
             "38 C (100.5 F) or higher for an infant",
             "40 C (104 F) or higher for a child"
-            
         ],
         "treatment": [
             "Seek medical assistance or phone EMS",
@@ -256,10 +267,11 @@
             "Unconsciousness"
         ],
         "treatment": [
-            "call EMS",
+            "Call EMS",
             "Identify and control cause of fainting",
             "Treat for shock",
-            "Monitor vitals"
+            "Monitor vitals",
+            "See unconscious"
         ]
     },
     "wound": {
@@ -276,8 +288,8 @@
         ],
         "treatment": [
             "Rest the affected body part",
-            "if not bleeding, gently clean affected area by flushing with clean water",
-            "if bleeding, control blood by applying a sterile dressing and wrap in a bandage",
+            "If not bleeding, gently clean affected area by flushing with clean water",
+            "If bleeding, control blood by applying a sterile dressing and wrap in a bandage",
             "Call EMS if there is a lot of blood loss, you cannot control the bleeding, the wound is an animal or human bite, or an infection develops"
         ]
     },
@@ -323,7 +335,8 @@
         ],
         "treatment": [
             "Call EMS",
-            "Treat for shock"
+            "Treat for shock",
+            "If victim becomes unconscious and not breathing, start CPR"
         ]
     },
     "head_injury": {
@@ -343,7 +356,8 @@
             "Call EMS",
             "Immobilize spine if you suspect a neck of spinal injury",
             "Treat the area for bleeding by applying a sterile dressing and a head bandage",
-            "For a suspected concussion, stop the sport or recreational activity"
+            "For a suspected concussion, stop the sport or recreational activity",
+            "If victim becomes unconscious and not breathing, CPR takes priority over injury"
         ]
     },
     "sprains_and_strains": {
