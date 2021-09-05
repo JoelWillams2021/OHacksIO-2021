@@ -59,9 +59,7 @@
                             <% } %>
                         <ul/>
                         <br>
-                        <div class="justify-content-center">
-                        <a href="/treatment/<%= condition %>" class="btn btn-primary btn-sm btn-block" style = "display: block;">See Treatment</a>
-                        </div>
+                        <a href="/treatment/<%= condition %>" class="btn btn-primary btn-sm btn-block d-flex justify-content-center" style = "margin-right: 3vw;">See treatment</a>
                     </div>
                     </div>
                 </div>
@@ -71,10 +69,6 @@
         </div>
 
     </div>
-
-    <script>
-        console.log('<%- JSON.stringify(matchedConditions) %>')
-    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"

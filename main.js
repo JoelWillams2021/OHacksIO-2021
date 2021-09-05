@@ -11,8 +11,6 @@ const port = process.env.PORT || 3000;
 
 var conditions = require('./data/symptoms.json');
 
-// BANDAGE URL: https://www.youtube.com/watch?v=Y1G8XQb0WBc
-
 app.get("/", (req, res) => {
     return res.render('index', {
         pagetype: 'Diagnose',

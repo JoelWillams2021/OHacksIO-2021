@@ -44,35 +44,41 @@
         <br>
         <h1 class="text-center"><%= pagetype %></h1>
     
-        <center><img src="/images/doctors.svg" alt="image" height="370vh" width="370vh"></center>
+        <div class="d-flex justify-content-center">
+                <img src="<%= pagetype === 'Diagnose' ? '/images/doctors.svg' : '/images/leg.svg' %>" alt="image" height="370vh" class="d-block mx-auto" style="max-width: 90vw;">
+        </div>
 
-        <form class="py-5" id="form" action="/search" method="GET">
-            <div class="card bg-light">
-                <div class="card-body">
-                    <h5 class="class-title">Selected <%= pagetype === 'Diagnose' ? 'symptoms' : 'conditions' %>:</h5>
-                    <div id="selected"></div>
+        <div class="m-auto">
+                <form class="py-3" id="form" action="/search" method="GET">
+                    <% if (pagetype === 'Diagnose') { %>
+                        <div class="card bg-light mx-0">
+                            <div class="card-body">
+                                <h5 class="class-title">Selected symptoms:</h5>
+                                <div id="selected" class="form-check"></div>
+                            </div>
+                            <button type="submit" class="btn btn-danger btn-lg" id="search-btn">Search</button>
+                        </div>
+                        <br>
+                    <% } %>
+                </form>
+
+                <div class="d-flex justify-content-center">
+                    <% if (pagetype === 'Diagnose' ) { %>
+                        <input class="form-control mx-2" type="text" placeholder="Enter your symptoms here" aria-label="Search" id="diagnose-input">
+                    <% } else if (pagetype === 'Treatment' ) { %>
+                        <input class="form-control mx-2" type="text" placeholder="Enter your condition here" aria-label="Search" id="treatment-input">
+                    <% } %>
                 </div>
-            </div>
-            <div class="d-flex">
-                <% if (pagetype === 'Diagnose' ) { %>
-                    <input class="form-control mx-2" type="text" placeholder="Enter your symptoms here" aria-label="Search" id="diagnose-input">
-                <% } else if (pagetype === 'Treatment' ) { %>
-                    <input class="form-control mx-2" type="text" placeholder="Enter your condition here" aria-label="Search" id="treatment-input">
-                <% } %>
-                <!-- <div class ="text-center"> -->
-                <button type="submit" class="btn btn-danger btn-lg">Search</button>
-                <!-- </div> -->
-            </div>
-        </form>
+        </div>
 
         <div class="card bg-light">
             <div class="card-body">
                 <h5 class="card-title"><%= pagetype === 'Diagnose' ? 'Symptoms' : 'Conditions' %>:</h5>
-                <div id="autocomplete" class="p-3"></div>
+                <div id="autocomplete" class="form-check p-3"></div>
             </div>
         </div>
 
-        <div style="background-color:rgb(241, 90, 30);" class="card text-light">
+        <div class="card text-dark bg-warning">
             <div class="card-body">
                 <center><h5 class="card-title">Things to Consider:</h5></center>
                 <ul class="card-text">
@@ -90,11 +96,7 @@
     <script>
         var conditions = JSON.parse(`<%- JSON.stringify(conditions) %>`)
     </script>
-    <% if (pagetype === 'Diagnose' ) { %>
-        <script>const pagetype = 'Diagnose';</script>
-    <% } else if (pagetype === 'Treatment') { %>
-        <script>const pagetype = 'Treatment';</script>
-    <% } %>
+        <script>const pagetype = "<%= pagetype === 'Diagnose' ? 'Diagnose' : 'Treatment' %>";</script>
 
     <script src="/js/autocomplete.js"></script>
     
