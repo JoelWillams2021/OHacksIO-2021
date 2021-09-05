@@ -54,19 +54,41 @@ app.get("/treatment/:condition", (req, res) => {
 app.get("/search", (req, res) => {
 
     let matchedConditions = {};
+    let inputtedSymptoms = [];
     for (condition in conditions) {
 
         for (let i = 0; i < conditions[condition]['symptoms'].length; i++) {
             for (symptom in req.query) {
-                if (conditions[condition]['symptoms'][i] === req.query[symptom] && (!(condition in matchedConditions)))
-                    matchedConditions[condition] = condition;
+                if (!inputtedSymptoms.includes(symptom))
+                    inputtedSymptoms.push(symptom);
+                if (conditions[condition]['symptoms'][i] === req.query[symptom]) {
+                    if (!matchedConditions[condition])
+                        matchedConditions[condition] = 1;
+                    else
+                        matchedConditions[condition] += 1;
+                }
             }
         }
 
     }
+
+    let sortedMatchedConditionsList = Object.keys(matchedConditions).map(function(key) {
+        return [key, matchedConditions[key]];
+    });
+    sortedMatchedConditionsList.sort(function(first, second) {
+        return second[1] - first[1];
+    });
+    let sortedMatchedConditions = {}
+    for (let i = 0; i < sortedMatchedConditionsList.length; i++) {
+        sortedMatchedConditions[sortedMatchedConditionsList[i][0]] = sortedMatchedConditionsList[i][1]
+    }
+
+
+    console.log(inputtedSymptoms)
     return res.render('search', {
-        matchedConditions: matchedConditions,
-        conditions: conditions
+        matchedConditions: sortedMatchedConditions,
+        conditions: conditions,
+        inputtedSymptoms: inputtedSymptoms
     })
 })
   
