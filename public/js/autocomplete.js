@@ -36,16 +36,11 @@ if (pagetype === 'Diagnose') {
     const treatment_input = document.getElementById('treatment-input');
     treatment_input.addEventListener('keyup', () => {
         autocomplete.innerHTML = '';
-        let allMatchedConditions = [];
-
-        for (condition in conditions) {
-            allMatchedConditions.push(conditions[condition]["condition"]);
-        }
 
         // Get matched
-        for (let i = 0; i < allMatchedConditions.length; i++) {
-            if (allMatchedConditions[i].toLowerCase().includes(treatment_input.value.toLowerCase()))
-                autocomplete.innerHTML += `<div>${allMatchedConditions[i]}</div><br>`;
+        for (condition in conditions) {
+            if (conditions[condition]['condition'].toLowerCase().includes(treatment_input.value.toLowerCase()))
+                autocomplete.innerHTML += `<div><a href="/treatment/${condition}">${conditions[condition]['condition']}</a></div><br>`;
         }
     })
 }

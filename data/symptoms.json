@@ -10,7 +10,8 @@
             "Apprach, identify yourself. Follow the victim if they leave the room.",
             "Ask: 'Are you choking? My name is... and I'm trained in first aid, may I assist you?'",
             "As long as victim is coughing, do not interfere physically.",
-            "Encourage victim to continue coughing."
+            "Encourage victim to continue coughing.",
+            "Monitor vitals"
         ]
     },
     "fully_obstructed_choking": {
@@ -28,7 +29,8 @@
             "Infant: Perform 5 chest compressions (2 fingers)",
             "If the victim is pregnant or too large: perform chest compressions",
             "Repeat until successful or victim becomes unconscious",
-            "If victim becomes unconscious, start CPR"
+            "If victim becomes unconscious, start CPR",
+            "Monitor vitals"
         ]
     },
     "asthma_attack": {
@@ -42,7 +44,8 @@
             "Assist victim to a comfortable position",
             "Assist victim in taking their medication (e.g. inhaler)",
             "Loosen tight-fitting clothin around the neck or chest",
-            "Call EMS if attack continues or victim is distressed."
+            "Call EMS if attack continues or victim is distressed.",
+            "Monitor vitals"
         ]
     },
     "hyperventilation": {
@@ -54,11 +57,12 @@
             "Headache",
             "Tingling of hands, feet, and the area around the mouth",
             "Confusion",
-            "Unconsiousness"
+            "Unconsciousness"
         ],
         "treatment": [
             "Reassure and try to calm victim",
-            "Encourage victim to perform pursue-lip breathing (say: 'breath like you're breathing through a straw')"
+            "Encourage victim to perform pursue-lip breathing (say: 'breath like you're breathing through a straw')",
+            "Monitor vitals"
         ]
     },
     "angina_heart_attack": {
@@ -83,7 +87,8 @@
             "Loosen tight clothing around neck and chest",
             "Help victim take any prescribed angina medication (common medications include nitroglycerin tablets or sprays)",
             "If victim does not have prescribed medication, another option is Aspirin. You may administer Aspirin to a victim if: They are not allergic, haven't been told by a doctor to avoid Aspirin, and consent to taking Aspirin.",
-            "Recommend the victim chew 1 adult or 2 low dose Aspirin tablets."
+            "Recommend the victim chew 1 adult or 2 low dose Aspirin tablets.",
+            "Monitor vitals"
         ]
     },
     "stroke": {
@@ -99,7 +104,8 @@
         "treatment": [
             "Call EMS",
             "Assess breathing, check pulse and other signs of circulation",
-            "Assist the victim into a comfortable position"
+            "Assist the victim into a comfortable position",
+            "Monitor vitals"
         ]
     },
     "shock": {
@@ -120,7 +126,8 @@
             "Maintain body temperature (if victim is cold, cover victim)",
             "Ensure breathing and pulse is at the normal rate",
             "Reassure the victim",
-            "Assist victim into comfortable position"
+            "Assist victim into comfortable position",
+            "Monitor vitals"
         ]
     },
     "major_bleeding": {
@@ -135,7 +142,8 @@
             "Call EMS",
             "Rest the affected body part",
             "Apply a sterile dressing to the wound and wrap the dressing with a bandage",
-            "If the dressing/bandage fails to control the bleeding, consider using a tourniquet (if trained to use one)"
+            "If the dressing/bandage fails to control the bleeding, consider using a tourniquet (if trained to use one)",
+            "Monitor vitals"
         ]
     },
     "severe_allergies": {
@@ -156,7 +164,8 @@
             "Ask victim if they carry an antidot kit for the allergy (e.g. EpiPen)",
             "Assist victim with their medicine",
             "A second dose of medication may be given if symptoms do not improve within 5 minutes",
-            "Provide EMS with the medication once they arive"
+            "Provide EMS with the medication once they arive",
+            "Monitor vitals"
         ]
     },
     "diabetes": {
@@ -176,7 +185,8 @@
             "If unconscious, place victim on their side",
             "If conscious, help victim test their blood suger (if test kit available)",
             "Provide victim with prescribed medication or sugar including glucose tablets, candy, or juice",
-            "Never administer insulin"
+            "Never administer insulin",
+            "Monitor vitals"
         ]
     },
     "seizures": {
@@ -189,14 +199,14 @@
             "Teeth clenching or grinding",
             "Loss of control of the bowel or bladder",
             "Confusion, disorientation, fatigue"
-            
         ],
         "treatment": [
             "Call EMS",
             "Clear objects from the surrounding area to prevent the victim from striking them and getting injured",
             "Do NOT restrict the victim's movements",
             "Do NOT place anything between the victim's teeth",
-            "Try to record number and duration of seizures"
+            "Try to record number and duration of seizures",
+            "Monitor vitals"
         ]
     },
     "unconsciousness": {
@@ -211,7 +221,7 @@
             "Identify and control cause of unconsciousness",
             "Check breathing",
             "If victim is not breathing, perform CPR",
-            "If victim is breathing, treat for shock"
+            "If victim is breathing, treat for shock and monitor vitals"
         ]
     },
     "fevers_in_infants_children": {
@@ -229,7 +239,8 @@
             "Sponge the child with lukewarm water (never cold water) for about 20 minutes - do not immerse the child or infant in a tub",
             "Dry and dress the child in comfortable but not too warm clothes",
             "Monitor the temperature, encourage fluids, and repeat sponging if necessary if necessary until medical help is reached or arrives",
-            "If child has a convulsion treat for seizure"
+            "If child has a convulsion treat for seizure",
+            "Monitor vitals"
         ]
     },
     "fainting": {
@@ -242,12 +253,13 @@
             "Pale skin",
             "Rapid breathing",
             "Dizziness",
-            "Unconscious"
+            "Unconsciousness"
         ],
         "treatment": [
             "call EMS",
             "Identify and control cause of fainting",
-            "Treat for shock"
+            "Treat for shock",
+            "Monitor vitals"
         ]
     },
     "wound": {

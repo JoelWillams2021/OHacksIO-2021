@@ -39,7 +39,8 @@ app.get("/treatment/:condition", (req, res) => {
 
     const premade_pages = [
         'cpr',
-        'ems'
+        'ems',
+        'vitals'
     ]
 
     if (premade_pages.includes(req.params['condition']))

@@ -65,18 +65,30 @@
             </div>
         </div>
 
+        <div class="card text-dark bg-warning">
+            <div class="card-body">
+                <h5 class="card-title">Note:</h5>
+                <p class="card-text">
+                    Always make sure to perform an environment check (no fire, no wire, no gas, no glass). This will prevent you from being injured.
+                    <br><br>
+                    Before helping a victim, be sure to introduce yourself and <a href="https://en.wikipedia.org/wiki/Good_Samaritan_law#Consent" target="_blank">gain consent</a>. This may potentially protect you from a lawsuit under a <a href="https://en.wikipedia.org/wiki/Good_Samaritan_law" target="_blank">Good Samaritan law</a>.
+                <p/>
+            </div>
+        </div>
+
 
     </div>
 
     <script>
         const treatments_replace = {
-            'CPR': '<a href="/treatment/cpr" target="_blank" class="link-info">CPR</a>',
-            'EMS': '<a href="/treatment/ems" target="_blank" class="link-info">EMS</a>',
-            'bandage': '<a href="https://www.youtube.com/watch?v=Y1G8XQb0WBc" target="_blank" class="link-info">bandage</a>',
-            'head bandage': '<a href="https://www.youtube.com/watch?v=53MYuHDbg5E" target="_blank" class="link-info">head bandage</a>'
+            'CPR': '/treatment/cpr',
+            'EMS': '/treatment/ems',
+            'vitals': '/treatment/vitals',
+            'bandage': 'https://www.youtube.com/watch?v=Y1G8XQb0WBc',
+            'head bandage': 'https://www.youtube.com/watch?v=53MYuHDbg5E'
         }
         for (keyword in treatments_replace) {
-            document.getElementById('treatments').innerHTML = document.getElementById('treatments').innerHTML.replace(keyword, treatments_replace[keyword])
+            document.getElementById('treatments').innerHTML = document.getElementById('treatments').innerHTML.replace(keyword, `<a href="${treatments_replace[keyword]}" target="_blank" class="link-info">${keyword}</a>`)
         }
     </script>
 
