@@ -2,10 +2,10 @@ const autocomplete = document.getElementById('autocomplete');
 
 var selectedSymptoms = [];
 
-if (pagetype === 'Emergency') {
-    const emergency_input = document.getElementById('emergency-input');
+if (pagetype === 'Diagnose') {
+    const diagnose_input = document.getElementById('diagnose-input');
 
-    emergency_input.addEventListener('keyup', () => {
+    diagnose_input.addEventListener('keyup', () => {
         autocomplete.innerHTML = '';
         let allMatchedSymptoms = [];
 
@@ -18,14 +18,16 @@ if (pagetype === 'Emergency') {
         }
         // Get matched
         for (let i = 0; i < allMatchedSymptoms.length; i++) {
-            if (allMatchedSymptoms[i].includes(emergency_input.value)) {
-                let autocomplete_input = selectedSymptoms.includes(allMatchedSymptoms[i]) ? `<input type="checkbox" name="autocomplete-${allMatchedSymptoms[i]}" id="autocomplete-${allMatchedSymptoms[i]}" onchange="onSymptomSelect('${allMatchedSymptoms[i]}')" checked><label for="autocomplete-${allMatchedSymptoms[i]}">${allMatchedSymptoms[i]}</label><br>` : `<input type="checkbox" name="autocomplete-${allMatchedSymptoms[i]}" id="autocomplete-${allMatchedSymptoms[i]}" onchange="onSymptomSelect('${allMatchedSymptoms[i]}')"><label for="autocomplete-${allMatchedSymptoms[i]}">${allMatchedSymptoms[i]}</label><br>`
+            if (allMatchedSymptoms[i].toLowerCase().includes(diagnose_input.value.toLowerCase())) {
+                let autocomplete_input = `<input type="checkbox" name="autocomplete-${allMatchedSymptoms[i]}" id="autocomplete-${allMatchedSymptoms[i]}" onchange="onSymptomSelect('${allMatchedSymptoms[i]}')"><label for="autocomplete-${allMatchedSymptoms[i]}">${allMatchedSymptoms[i]}</label><br>`
+                if (selectedSymptoms.includes(allMatchedSymptoms[i]))
+                    autocomplete_input = `<input type="checkbox" name="autocomplete-${allMatchedSymptoms[i]}" id="autocomplete-${allMatchedSymptoms[i]}" onchange="onSymptomSelect('${allMatchedSymptoms[i]}')" checked><label for="autocomplete-${allMatchedSymptoms[i]}">${allMatchedSymptoms[i]}</label><br>`
                 autocomplete.innerHTML += autocomplete_input;
             }
         }
 
         // If nothing searched
-        if (emergency_input.value === '') {
+        if (diagnose_input.value === '') {
             autocomplete.innerHTML = '';
             allMatchedSymptoms = [];
         }
@@ -40,6 +42,6 @@ function onSymptomSelect(symptom) {
 
     document.getElementById('selected').innerHTML = ''
     for (let i = 0; i<selectedSymptoms.length; i++) {
-        document.getElementById('selected').innerHTML += `<li>${selectedSymptoms[i]}</li>`
+        document.getElementById('selected').innerHTML += `<input type="checkbox" name="${selectedSymptoms[i]}" value="${selectedSymptoms[i]}" checked onchange="this.checked=true">${selectedSymptoms[i]}</input><br>`
     }
 }

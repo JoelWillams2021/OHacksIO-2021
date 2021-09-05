@@ -3,8 +3,8 @@
         "condition": "Partially obstructed choking",
         "symptoms": [
             "Coughing",
-            "wheezing",
-            "flushed skin colour"
+            "Wheezing",
+            "Flushed skin colour"
         ],
         "treatment": [
             "Apprach, identify yourself. Follow the victim if they leave the room.",
@@ -391,7 +391,7 @@
             "Discolouration",
             "Difficulty moving the affected part",
             "Deformity",
-            "Victim may have heard a cracking sound when incident happenedappened"
+            "Victim may have heard a cracking sound when incident happened"
         ],
         "treatment": [
             "Rest injured part",

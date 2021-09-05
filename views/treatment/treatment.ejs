@@ -11,11 +11,10 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <nav class="navbar navbar-expand-lg navbar-custom navbar-dark bg-danger" id="navbarCustom">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
-                <img src="/images/Logo.png"
-                    alt="image" width="24" height="24" class="d-inline-block align-text-top">
+                <img src="/images/Logo.png" alt="image" width="40" height="40" padding-bottom="10" class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +23,8 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/emergency">
-                            <h1 class="fs-3">Emergency</h1>
+                        <a class="nav-link active" aria-current="page" href="/diagnose">
+                            <h1 class="fs-3">Diagnose</h1>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -44,7 +43,7 @@
         
         <h1 class="text-center"><%= condition %></h1>
 
-        <div class="card text-light bg-secondary">
+        <div class="card text-light bg-danger">
             <div class="card-body">
                 <h5 class="card-title">Symptoms</h5>
                 <ul class="card-text" id="symptoms">
@@ -55,7 +54,7 @@
             </div>
         </div>
 
-        <div class="card text-light bg-secondary">
+        <div class="card text-light bg-danger">
             <div class="card-body">
                 <h5 class="card-title">Treatment</h5>
                 <ul class="card-text" id="treatments">

@@ -6,20 +6,30 @@
     
 }
 
-#selected {
-    border: 1px solid black;
-}
+
 
 .card {
     margin: 30px auto;
     max-width: 700px;
+    transition: 0.3s all;
 }
+
+.card:hover {
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.4);
+}
+
 .card img {
     max-width: 300px;
     margin: 10px auto;
     border-radius: 10px;
 }
 
-.bg-warning {
-background-color: rgb(241, 132, 132);
+.nav-item {
+    transition: 0.3s all;
+}
+
+.nav-item:hover{
+    color: #ffffff;
+    background-color: #ff0000; 
+    border-radius: 8px;
 }

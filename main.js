@@ -15,7 +15,7 @@ var conditions = require('./data/symptoms.json');
 
 app.get("/", (req, res) => {
     res.render('index', {
-        pagetype: 'Emergency',
+        pagetype: 'Diagnose',
         conditions: conditions
     });
 });
@@ -24,7 +24,7 @@ app.get("/cpr", (req, res) => {
     res.render('cpr');
 });
 
-app.get("/emergency", (req, res) => {
+app.get("/diagnose", (req, res) => {
     res.redirect('/')
 });
 
@@ -50,6 +50,24 @@ app.get("/treatment/:condition", (req, res) => {
             symptoms: conditions[req.params['condition']]['symptoms'],
             treatment: conditions[req.params['condition']]['treatment']
         })
+})
+
+app.get("/search", (req, res) => {
+    let matchedConditions = {};
+    for (condition in conditions) {
+
+        for (let i = 0; i < conditions[condition]['symptoms'].length; i++) {
+            for (symptom in req.query) {
+                if (conditions[condition]['symptoms'][i] === req.query[symptom] && (!(condition in matchedConditions)))
+                    matchedConditions[condition] = condition;
+            }
+        }
+
+    }
+    res.render('search', {
+        matchedConditions: matchedConditions,
+        conditions: conditions
+    })
 })
   
 app.listen(port, () => {
