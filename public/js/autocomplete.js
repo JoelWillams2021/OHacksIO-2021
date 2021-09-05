@@ -14,11 +14,13 @@ if (pagetype === 'Diagnose') {
         let allMatchedSymptoms = [];
 
         for (condition in conditions) {
+            console.log(`Condition : ${condition}`)
             // Get all symptoms
             for (let i = 0; i < conditions[condition]['symptoms'].length; i++) {
                 if (!allMatchedSymptoms.includes(conditions[condition]['symptoms'][i]))
                     allMatchedSymptoms.push(conditions[condition]['symptoms'][i]);
             }
+            allMatchedSymptoms.sort()
         }
         // Get matched
         for (let i = 0; i < allMatchedSymptoms.length; i++) {
@@ -39,11 +41,20 @@ if (pagetype === 'Diagnose') {
 } else {
     const treatment_input = document.getElementById('treatment-input');
 
+    let allMatchedConditions = [];
+    let allMatchedConditionsHref = [];
+
     // If nothing searched
     if (treatment_input.value === '') {
         autocomplete.innerHTML = '';
         for (condition in conditions) {
-            autocomplete.innerHTML += `<div class="py-1"><a href="/treatment/${condition}" class="py-1">${conditions[condition]['condition']}</a></div>`;
+            allMatchedConditions.push(conditions[condition]['condition']);
+            allMatchedConditionsHref.push(condition);
+        }
+        allMatchedConditions.sort();
+        allMatchedConditionsHref.sort();
+        for (let i = 0; i < allMatchedConditions.length; i++) {
+            autocomplete.innerHTML += `<div class="py-1"><a href="/treatment/${allMatchedConditionsHref[i]}" class="py-1">${allMatchedConditions[i]}</a></div>`;
         }
     }
 
@@ -52,8 +63,17 @@ if (pagetype === 'Diagnose') {
 
         // Get matched
         for (condition in conditions) {
-            if (conditions[condition]['condition'].toLowerCase().includes(treatment_input.value.toLowerCase()))
-                autocomplete.innerHTML += `<div class="py-1"><a href="/treatment/${condition}" class="py-1">${conditions[condition]['condition']}</a></div>`;
+            allMatchedConditions = [];
+            allMatchedConditionsHref = [];
+            if (conditions[condition]['condition'].toLowerCase().includes(treatment_input.value.toLowerCase())) {
+                allMatchedConditions.push(conditions[condition]['condition']);
+                allMatchedConditionsHref.push(condition);
+            }
+            allMatchedConditions.sort();
+            allMatchedConditionsHref.sort();
+            for (let i = 0; i < allMatchedConditions.length; i++) {
+                autocomplete.innerHTML += `<div class="py-1"><a href="/treatment/${allMatchedConditionsHref[i]}" class="py-1">${allMatchedConditions[i]}</a></div>`;
+            }
         }
 
     })
