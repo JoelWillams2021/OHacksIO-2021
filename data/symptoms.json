@@ -139,7 +139,7 @@
     "major_bleeding": {
         "condition": "Major Bleeding",
         "symptoms": [
-            "Blood",
+            "Bleeding",
             "Pain",
             "Distress",
             "Shock"
@@ -284,7 +284,7 @@
             "Bite",
             "Pain",
             "Distress",
-            "External bleeding"
+            "Bleeding"
         ],
         "treatment": [
             "Rest the affected body part",
@@ -384,7 +384,7 @@
             "Discolouration",
             "Difficulty moving the affected area",
             "Bone protruding through the skin",
-            "Bleeding wound"
+            "Bleeding"
         ],
         "treatment": [
             "Call EMS",
